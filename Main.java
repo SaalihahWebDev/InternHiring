@@ -19,4 +19,13 @@ public class main {
             return canditate;
         }
     }
+    public static void main(String[] args) {
+        System.out.println("Welcome to Interhiring tool");
+        try{
+            Candidate canditate=getCandidateDetails();
+            System.out.println("Registration Sucessful");
+        } catch(InvalidInternException e){
+            System.out.println(e.getMessage());
+        }
+    }
 }
