@@ -52,3 +52,8 @@ public class Candidate{
         this.percentage=percentage;
     }
 }
+public class InvalidInternException extends Exception{
+    public InvalidInternException(String message){
+        super(message);
+    }
+}
